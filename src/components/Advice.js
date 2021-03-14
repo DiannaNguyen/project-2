@@ -1,31 +1,37 @@
 import React, { useState, useEffect } from 'react';
-
-const adviceURL = 'https://api.quotable.io/random';
+import '../App.css';
 
 const Advice = () => {
-    const [advice, setAdvice] = useState([]);
-
-    useEffect(() => {
-        // const url = `${adviceURL}.json`;
-
-        fetch(adviceURL)
+    const [quote, setQuote] = useState(" ");
+    const [author, setAuthor] = useState(" ");
+    
+	useEffect(() => {
+		fetch("https:api.quotable.io/random")
             .then((res) => res.json())
-            .then((data) => {
-                setAdvice(`${data.content} -${data.author}`);
+            .then((quote) => {
+                setQuote(`${quote.content}`);
+                setAuthor(`-${quote.author}`);
             })
             .catch(console.error);
-    }, []);
+	}, []);
 
-    if (!advice) {
-        return <h2>Could not find any quotes!</h2>
-    }
+       let getNewQuote = () => {
+					fetch("https:api.quotable.io/random")
+						.then((res) => res.json())
+						.then((quote) => {
+							setQuote(`${quote.content}`);
+							setAuthor(`-${quote.author}`);
+						});
+				};
 
     return (
-        <div>
-            <h3>{advice.content}</h3>
-            <p>{advice.author}</p>
-        </div>
-    );
+			<div className="quote">
+				<h1>{quote}</h1>
+				<h2>{author}</h2>
+				<button className='button' onClick={getNewQuote}>Try Again, Not Feeling It
+				</button>
+			</div>
+		);
 };
 
 export default Advice;
