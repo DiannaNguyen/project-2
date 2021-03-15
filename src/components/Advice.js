@@ -19,8 +19,10 @@ const Advice = () => {
 		fetch('https:api.quotable.io/random')
 			.then((res) => res.json())
 			.then((data) => {
-				setQuote(`${data.content}`);
-				setAuthor(`-${data.author}`);
+                const content = data.content;
+                const author = "-" + data.author;
+				setQuote(content);
+				setAuthor(author);
 			});
 	};
 
