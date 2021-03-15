@@ -6,7 +6,7 @@ const Advice = () => {
 	const [author, setAuthor] = useState(' ');
 
 	useEffect(() => {
-		fetch('https:api.quotable.io/random')
+		fetch('https://api.quotable.io/random')
 			.then((res) => res.json())
 			.then((data) => {
 				setQuote(`${data.content}`);
@@ -16,7 +16,7 @@ const Advice = () => {
 	}, []);
 
 	let getNewQuote = () => {
-		fetch('https:api.quotable.io/random')
+		fetch('https://api.quotable.io/random')
 			.then((res) => res.json())
 			.then((data) => {
                 const content = data.content;
