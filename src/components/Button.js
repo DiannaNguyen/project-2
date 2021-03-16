@@ -1,12 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 const Button = () => {
-    <div className="quote">
-		<Link to={`/advice/`}>
-			<button className='button'>Click Here</button>
-		</Link>
-	</div>
-}
+	return (
+		<div>
+			<button className='button'>Start Here</button>
+		</div>
+	);
+};
 
 export default Button;
