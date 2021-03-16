@@ -20,6 +20,12 @@ function App() {
 				<Route path='/' exact component={Home} />
 				<Route path='/advice' component={Advice} />
 			</main>
+			<footer>
+				<p>
+					The content on this application is sourced by the
+					<a href="https://github.com/lukePeavey/quotable"> Quotable API</a>. Created 2021, Dianna Nguyen.
+				</p>
+			</footer>
 		</div>
 	);
 }

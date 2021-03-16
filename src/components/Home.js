@@ -6,7 +6,8 @@ import Button from './Button';
 const Home = () => {
 	return (
 		<div className='quote'>
-			<h1>Take what you need.</h1><br/>
+			<p>Take what you need.</p>
+			<br />
 			<Link to={`/advice/`}>
 				<Button />
 			</Link>

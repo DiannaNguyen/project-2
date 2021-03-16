@@ -32,6 +32,7 @@ a {
 	background: rgb(173, 173, 175);
 }
 
+
 .quote {
 	background: whitesmoke;
 	border: 15px solid rgb(173, 173, 175);
@@ -39,18 +40,26 @@ a {
 	border-radius: 0 0 10px 10px;
 	display: flex;
 	flex-direction: column;
-	justify-content: right;
-	align-items: flex-end;
 }
 
 .quote h1 {
+	justify-content: left;
+	align-items: flex-start;
 	font-size: 20px;
 	text-align: left;
 }
 .quote h2 {
+	justify-content: right;
+	align-items: flex-end;
 	margin-top: 10px;
 	font-size: 18px;
 	text-align: right;
+}
+
+.quote p {
+	justify-content: center;
+	align-items: center;
+	font-size: 25px;
 }
 
 .button {
@@ -63,12 +72,30 @@ a {
 	font-weight: 600;
 	transition: background 1s, color 1s;
 }
+.btn {
+	display: flex;
+	flex-direction: column;
+	justify-content: right;
+	align-items: flex-end;
+}
+
 .button:hover {
 	background: whitesmoke;
 	color: rgb(173, 173, 175);
 }
 
 .start {
-	padding: 15px;
-	margin: 0 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.start p {
+	color: whitesmoke;
+}
+
+p {
+	text-align: center;
+	color:black;
+	font-size: 12px;
 }

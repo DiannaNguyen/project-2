@@ -4,7 +4,7 @@ import '../App.css';
 const Button = () => {
 	return (
 		<div className="start">
-			<button className='button start'>
+			<button className='button'>
 				<p>Start Here</p>
 			</button>
 		</div>
