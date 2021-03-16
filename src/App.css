@@ -1,85 +1,74 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-.App {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  /* height: 100%;
-  width: 100%; */
-  flex-direction: column;
-  background: url(./Images/Collage\ Wallpaper.jpg);
-  background-size: cover;
-  background-repeat: repeat;
-  background-position: center;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-.header {
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-}
-
-
-.header a {
-  padding: 10px 189px 0;
-  border-radius: 10px 10px 0 0 ;
-  text-align: left;
-  align-items: center;
-  text-decoration: none;
-  color: whitesmoke;
-  font-size: 10px;
-  background: rgb(173, 173, 175);
-  display: inline-block;
-}
-
-
-.quote {
-  width: 550px;
-  height: 300px;
-  background: whitesmoke;
-  border: 15px solid rgb(173, 173, 175);
-  padding: 50px;
-  border-radius: 0 0 10px 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-
-}
-.quote h1 {
-  align-items: left;
-  font-size: 18px;
-}
-.quote h2 {
-  font-size: 15px;
-}
-
-
-.button {
-  display: block;
-  position: relative;
-  justify-content: right;
-  align-items: right;
-	padding: 10px 15px;
-	color: whitesmoke;
-  background: rgb(173, 173, 175);
-  font-weight: 600;
-	border-radius: 5px;
-  font-size: 0.75rem;
-	cursor: pointer;
-	outline: none;
-}
-
-
-.button:hover {
-  background: whitesmoke;
-  color: rgb(173, 173, 175);
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	min-height: 100vh;
+	background: url(./Images/Collage\ Wallpaper.jpg);
 }
 
 a {
-  text-decoration: none;
+	text-decoration: none;
+	color: whitesmoke;
+}
+
+.App {
+	margin: 0 50px;
+}
+
+.header {
+	display: flex;
+	justify-content: left;
+	align-items: flex-start;
+	border-radius: 10px 10px 0 0;
+	padding: 15px 0 0 15px;
+	font-size: 12px;
+	background: rgb(173, 173, 175);
+}
+
+.quote {
+	background: whitesmoke;
+	border: 15px solid rgb(173, 173, 175);
+	padding: 45px;
+	border-radius: 0 0 10px 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: right;
+	align-items: flex-end;
+}
+
+.quote h1 {
+	font-size: 20px;
+	text-align: left;
+}
+.quote h2 {
+	margin-top: 10px;
+	font-size: 18px;
+	text-align: right;
+}
+
+.button {
+	color: whitesmoke;
+	background: rgb(173, 173, 175);
+	cursor: pointer;
+	padding: 15px;
+	font-size: 15px;
+	border-radius: 5px;
+	font-weight: 600;
+	transition: background 1s, color 1s;
+}
+.button:hover {
+	background: whitesmoke;
+	color: rgb(173, 173, 175);
+}
+
+.start {
+	padding: 15px;
+	margin: 0 20px;
 }

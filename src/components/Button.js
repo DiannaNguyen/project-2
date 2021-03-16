@@ -1,9 +1,10 @@
 import React from 'react';
+import '../App.css';
 
 const Button = () => {
 	return (
-		<div>
-			<button className='button'>
+		<div className="start">
+			<button className='button start'>
 				<p>Start Here</p>
 			</button>
 		</div>
