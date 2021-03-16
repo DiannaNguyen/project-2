@@ -3,7 +3,7 @@ import '../App.css';
 
 const Button = () => {
 	return (
-		<div className="start">
+		<div className='start'>
 			<button className='button'>
 				<p>Start Here</p>
 			</button>

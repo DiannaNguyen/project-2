@@ -33,10 +33,10 @@ const Advice = () => {
 			<h1>{quote}</h1>
 			<h2>{author}</h2>
 			<br />
-			<div className="btn">
-			<button className='button' onClick={getNewQuote}>
-				Try Again, Not Feeling It
-			</button>
+			<div className='btn'>
+				<button className='button' onClick={getNewQuote}>
+					Try Again, Not Feeling It
+				</button>
 			</div>
 		</div>
 	);
