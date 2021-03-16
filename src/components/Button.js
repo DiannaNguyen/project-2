@@ -1,12 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import '../App.css';
 
 const Button = () => {
-    <div className="quote">
-		<Link to={`/advice/`}>
-			<button className='button'>Click Here</button>
-		</Link>
-	</div>
-}
+	return (
+		<div className="start">
+			<button className='button'>
+				<p>Start Here</p>
+			</button>
+		</div>
+	);
+};
 
 export default Button;

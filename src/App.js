@@ -6,20 +6,26 @@ import Advice from './components/Advice';
 
 
 
+
 function App() {
 
   return (
 		<div className='App'>
-			<nav className='header'>
+			<header className='header'>
 				<Link to='/'>
 					<h1>Tell Me Something</h1>
 				</Link>
-			</nav>
-
+			</header>
 			<main>
 				<Route path='/' exact component={Home} />
 				<Route path='/advice' component={Advice} />
 			</main>
+			<footer>
+				<p>
+					The content on this application is sourced by the
+					<a href="https://github.com/lukePeavey/quotable"> Quotable API</a>. Created 2021, Dianna Nguyen.
+				</p>
+			</footer>
 		</div>
 	);
 }

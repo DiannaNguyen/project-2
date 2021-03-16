@@ -9,7 +9,7 @@ const Advice = () => {
 		fetch('https://api.quotable.io/random')
 			.then((res) => res.json())
 			.then((data) => {
-                const quote = data.content;
+				const quote = data.content;
 				const author = '-' + data.author;
 				setQuote(quote);
 				setAuthor(author);
@@ -21,8 +21,8 @@ const Advice = () => {
 		fetch('https://api.quotable.io/random')
 			.then((res) => res.json())
 			.then((data) => {
-                const quote = data.content;
-                const author = "-" + data.author;
+				const quote = data.content;
+				const author = '-' + data.author;
 				setQuote(quote);
 				setAuthor(author);
 			});
@@ -32,9 +32,12 @@ const Advice = () => {
 		<div className='quote'>
 			<h1>{quote}</h1>
 			<h2>{author}</h2>
+			<br />
+			<div className="btn">
 			<button className='button' onClick={getNewQuote}>
 				Try Again, Not Feeling It
 			</button>
+			</div>
 		</div>
 	);
 };
