@@ -25,16 +25,18 @@ const Advice = () => {
                 const author = "-" + data.author;
 				setQuote(quote);
 				setAuthor(author);
+				
 			});
 	};
 
 	return (
 		<div className='quote'>
 			<h1>{quote}</h1>
-			<h2>{author}</h2>
+			<h2>{author}</h2><br/>
 			<button className='button' onClick={getNewQuote}>
 				Try Again, Not Feeling It
 			</button>
+
 		</div>
 	);
 };
