@@ -1,15 +1,11 @@
 import './App.css';
-import React from "react";
-import { Route, Link } from "react-router-dom";
-import Home from "./components/Home";
+import React from 'react';
+import { Route, Link } from 'react-router-dom';
+import Home from './components/Home';
 import Advice from './components/Advice';
 
-
-
-
 function App() {
-
-  return (
+	return (
 		<div className='App'>
 			<header className='header'>
 				<Link to='/'>
@@ -23,7 +19,8 @@ function App() {
 			<footer>
 				<p>
 					The content on this application is sourced by the
-					<a href="https://github.com/lukePeavey/quotable"> Quotable API</a>. Created 2021, Dianna Nguyen.
+					<a href='https://github.com/lukePeavey/quotable'> Quotable API</a>.
+					Created 2021, Dianna Nguyen.
 				</p>
 			</footer>
 		</div>
